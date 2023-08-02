@@ -61,7 +61,7 @@ class CatSerializer(serializers.ModelSerializer):
         if obj.image:
             return obj.image.url
         return None
-    
+
     def get_age(self, obj):
         return dt.datetime.now().year - obj.birth_year
 
